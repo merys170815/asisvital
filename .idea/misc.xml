@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Black">
+<<<<<<< HEAD
     <option name="sdkName" value="Python 3.11 (fios doctor)" />
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.11 (fios doctor)" project-jdk-type="Python SDK" />
+=======
+    <option name="sdkName" value="Python 3.11 (pagina wed)" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.11 (pagina wed)" project-jdk-type="Python SDK" />
+>>>>>>> ff03d493412d017b2d8ab794f3cd20c0d11c5c22
 </project>
