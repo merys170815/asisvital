@@ -2,368 +2,333 @@
 <html lang="es">
 
 <head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="salud, médico, consultas" />
-  <meta name="description" content="Servicios médicos de calidad en tu hogar." />
-  <meta name="author" content="FIOS DOCTOR S.A.S" />
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>FIOS DOCTOR SAS - Servicios Médicos a Domicilio</title>
+  <meta name="description" content="FIOS DOCTOR SAS ofrece servicios médicos de calidad a domicilio. Atención personalizada y rápida en la comodidad de tu hogar.">
+  <meta name="keywords" content="FIOS DOCTOR, servicios médicos, atención médica domiciliaria, consultas médicas, Bogotá">
 
-  <title>FIOS DOCTOR S.A.S</title>
+  <!-- Favicons -->
+  <link href="assets/img/logo3.png" rel="icon">
+  <link href="assets/img/logo3.png" rel="apple-touch-icon">
 
-  <!-- Slider stylesheet -->
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Poppins&family=Raleway&display=swap" rel="stylesheet">
 
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Dosis:400,500|Poppins:400,700&display=swap" rel="stylesheet">
-
-  <!-- Custom styles -->
-  <link href="css/style.css" rel="stylesheet" />
-  <link href="css/responsive.css" rel="stylesheet" />
-
-  <style>
-    .info_section {
-      background-color: #f8f9fa;
-      padding: 30px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-      text-align: center;
-    }
-
-    .info_section img {
-      max-width: 150px;
-      margin-right: 20px;
-    }
-
-    .info_text {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      text-align: left;
-    }
-
-    .info_text h1 {
-      font-size: 32px;
-      color: #333;
-      margin: 0;
-    }
-
-    .info_text p {
-      font-size: 22px;
-      font-style: italic;
-      font-weight: bold;
-      color: #555;
-      margin: 5px 0 0 0;
-    }
-
-    .phone {
-      font-size: 20px;
-      color: #000;
-      font-weight: bold;
-      margin-left: 30px;
-    }
-
-    .slider_section .slider_detail-box h1 {
-      font-size: 48px;
-      color: #333;
-    }
-
-    .slider_section .slider_detail-box span {
-      color: #007bff;
-      font-weight: bold;
-    }
-
-    .slider_section .btn-box .btn-1,
-    .slider_section .btn-box .btn-2 {
-      padding: 10px 20px;
-      margin: 10px 10px 0 0;
-      border: none;
-      background-color: #007bff;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-
-    .slider_section .btn-box .btn-2 {
-      background-color: #28a745;
-    }
-
-    .slider_img-box img {
-      max-width: 100%;
-      height: auto;
-    }
-  </style>
-
-  <!-- Google Tag Manager (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C2XZ2YYP9S"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-
-    // Configuración de Google Analytics
-    gtag('config', 'G-C2XZ2YYP9S');
-
-    // Event snippet for Vista de página conversion page
-    gtag('event', 'conversion', {
-      'send_to': 'AW-16955964314/7OChCP2lnLAaEJr3nZU_',
-      'value': 1.0,
-      'currency': 'COP'
-    });
-  </script>
-
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="index-page">
 
+  <!-- Header -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex justify-content-between align-items-center">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename">FIOS DOCTOR SAS</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+         <li><a href="#hero" class="active">Inicio</a></li>
+<li><a href="#about">Sobre Nosotros</a></li>
+<li><a href="#features">Servicios</a></li>
+<!-- Cambiar el enlace de contacto a WhatsApp -->
+<li><a href="https://wa.me/573227523968" target="_blank">Contacto</a></li>
 
-<!-- SECCIÓN DE INFORMACIÓN PRINCIPAL EN UNA SOLA LÍNEA -->
-<section class="info_section" style="display: flex; align-items: center; justify-content: center; padding: 20px;">
-  <img src="images/tool.png" alt="Logo FIOS DOCTOR" style="max-width: 100px; margin-right: 20px;">
-  <div class="info_text" style="text-align: center;">
-    <h1 style="margin: 0;">FIOS DOCTOR S.A.S</h1>
-    <p style="font-weight: bold; color: #333; font-size: 16px; margin: 5px 0 0 0;">NIT: 901.633.120-0</p>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+      <img src="assets/img/hero-bg-2.jpg" alt="" class="hero-bg">
+      <div class="container">
+        <div class="row gy-4 justify-content-between align-items-center">
+<!-- Carousel con imagen y texto que cambia dinámicamente -->
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+  <div class="carousel-inner">
+    <!-- Primer slide -->
+    <div class="carousel-item active">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-in">
+          <h1>Atención Médica Domiciliaria con <span>FIOS DOCTOR SAS</span></h1>
+          <p>Brindamos servicios médicos de calidad directamente en tu hogar para tu comodidad y bienestar.</p>
+          <div class="d-flex">
+            <a href="https://wa.me/573227523968" class="btn btn-success btn-sm mt-2" target="_blank">
+              <i class="bi bi-whatsapp"></i> Contacta por WhatsApp
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img src="assets/img/IMG9.jpg" class="d-block w-100" alt="Atención Médica">
+        </div>
+      </div>
+    </div>
+
+    <!-- Segundo slide -->
+    <div class="carousel-item">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-in">
+          <h1>Medicina General a Domicilio</h1>
+          <p>Ofrecemos consultas médicas generales con un profesional capacitado en la comodidad de tu hogar.</p>
+          <div class="d-flex">
+            <a href="https://wa.me/573227523968" class="btn btn-success btn-sm mt-2" target="_blank">
+              <i class="bi bi-whatsapp"></i> Contacta por WhatsApp
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img src="assets/img/IMG6.jpg" class="d-block w-100" alt="Medicina General">
+        </div>
+      </div>
+    </div>
+
+    <!-- Tercer slide -->
+    <div class="carousel-item">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-in">
+          <h1>Terapia Respiratoria a Domicilio</h1>
+          <p>Atención especializada para pacientes con afecciones pulmonares, brindada cómodamente en tu hogar.</p>
+          <div class="d-flex">
+            <a href="https://wa.me/573227523968" class="btn btn-success btn-sm mt-2" target="_blank">
+              <i class="bi bi-whatsapp"></i> Contacta por WhatsApp
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img src="assets/img/IMG7.jpg" class="d-block w-100" alt="Terapia Respiratoria">
+        </div>
+      </div>
+    </div>
   </div>
-  <p style="font-size: 18px; font-style: italic; margin-left: 20px;">“Cuidamos de tu salud y la de tu familia con calidad y amor”</p>
-</section>
 
- <!-- SLIDER SECTION -->
-<section class="slider_section position-relative slider_background">
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-    </ol>
-    <div class="carousel-inner">
+  <!-- Controles del Carousel -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
-      <div class="carousel-item active">
-        <div class="container-fluid">
-          <div class="row align-items-center">
-            <div class="col-md-5 offset-md-1">
-              <div class="slider_detail-box">
-                <h1>
-                  Atención Médica <br>
-                  <span>En tu Hogar</span>
-                </h1>
-                <p>
-                  Profesionales de la salud listos para atenderte donde lo necesites. Calidad y humanidad en cada consulta.
-                </p>
-                <div class="btn-box">
-                  <a href="#servicios" class="btn-1">Nuestros Servicios</a>
-                  <a href="#contacto" class="btn-2">Contáctanos</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="slider_img-box">
-                <img src="images/ATENCION_MEDICA.jpg" alt="Atención médica a domicilio">
-              </div>
-            </div>
-          </div>
-        </div>
+      <!-- Olas decorativas -->
+      <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none">
+        <defs>
+          <path id="wave-path" d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18v44h-352z"></path>
+        </defs>
+        <g class="wave1"><use xlink:href="#wave-path" x="50" y="3"></use></g>
+        <g class="wave2"><use xlink:href="#wave-path" x="50" y="0"></use></g>
+        <g class="wave3"><use xlink:href="#wave-path" x="50" y="9"></use></g>
+      </svg>
+    </section>
+
+  <!-- About Section -->
+<section id="about" class="about section">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row align-items-xl-center gy-5">
+
+      <div class="col-xl-12 content text-center">
+        <h1>Sobre Nosotros</h1>
+        <h2>FIOS DOCTOR SAS</h2>
+        <p><strong>FIOS DOCTOR SAS</strong> es una empresa de atención médica domiciliaria dedicada a brindar servicios de salud integrales, con calidad humana, oportunidad y profesionalismo, directamente en el hogar de nuestros pacientes. Nuestro equipo está conformado por profesionales de la salud comprometidos con el bienestar físico, mental y emocional de cada usuario.</p>
       </div>
 
-      <!-- Segundo slide -->
-      <div class="carousel-item">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-5 offset-md-1">
-              <div class="slider_detail-box">
-                <h1>
-                  Certificados Médicos <br>
-                  <span>y Valoraciones</span>
-                </h1>
-                <p>
-                  Emitimos certificados médicos y realizamos valoraciones en la comodidad de tu hogar o lugar de trabajo.
-                </p>
-                <div class="btn-box">
-                  <a href="#servicios" class="btn-1">Ver Más</a>
-                  <a href="#contacto" class="btn-2">Contáctanos</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="slider_img-box">
-                <img src="images/CERTIFICADO1.jpg" alt="Certificados médicos">
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="col-xl-6 content">
+        <h3>Misión</h3>
+        <p>Brindar atención médica domiciliaria segura, oportuna y humanizada, mejorando la calidad de vida de nuestros usuarios mediante un equipo interdisciplinario con vocación de servicio.</p>
+
+        <h3>Visión</h3>
+        <p>Ser líderes en atención médica en casa en Colombia para el año 2030, reconocidos por la excelencia en el servicio, la innovación y el compromiso con la salud de las familias.</p>
       </div>
 
-      <!-- Tercer slide -->
-      <div class="carousel-item">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-5 offset-md-1">
-              <div class="slider_detail-box">
-                <h1>
-                  Terapias y Cuidados <br>
-                  <span>Profesionales</span>
-                </h1>
-                <p>
-                  Ofrecemos terapias respiratorias, físicas y cuidados paliativos a domicilio con personal capacitado.
-                </p>
-                <div class="btn-box">
-                  <a href="#servicios" class="btn-1">Explorar Servicios</a>
-                  <a href="#contacto" class="btn-2">Agendar</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="slider_img-box">
-                <img src="images/TERAPIA_RESPIRA.jpg" alt="Terapia respiratoria a domicilio">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="col-xl-6 content">
+        <h3>Valores Corporativos</h3>
+        <ul>
+          <li><strong>Compromiso:</strong> Actuamos con responsabilidad y dedicación en cada atención.</li>
+          <li><strong>Calidez Humana:</strong> Entregamos atención con empatía y respeto.</li>
+          <li><strong>Ética:</strong> Nuestra práctica se basa en principios morales y legales.</li>
+          <li><strong>Calidad:</strong> Buscamos la mejora continua en todos nuestros procesos.</li>
+        </ul>
 
-      <!-- Cuarto slide -->
-      <div class="carousel-item">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-5 offset-md-1">
-              <div class="slider_detail-box">
-                <h1>
-                  Videoconsultas <br>
-                  <span>y Orientación Médica</span>
-                </h1>
-                <p>
-                  Resolvemos tus inquietudes médicas desde casa mediante consultas virtuales con nuestros especialistas.
-                </p>
-                <div class="btn-box">
-                  <a href="#servicios" class="btn-1">Conocer Más</a>
-                  <a href="#contacto" class="btn-2">Contáctanos</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="slider_img-box">
-                <img src="images/VIDEO_CON1.jpg" alt="Videoconsulta médica">
-              </div>
-            </div>
-          </div>
-        </div>
+        <h3>Objetivos</h3>
+        <ul>
+          <li>Mejorar el acceso a servicios de salud para la población en su entorno familiar.</li>
+          <li>Disminuir tiempos de espera y traslados innecesarios.</li>
+          <li>Fortalecer la atención primaria con enfoque preventivo.</li>
+        </ul>
       </div>
 
     </div>
   </div>
 </section>
-<!-- end slider section -->
 
-<!-- CSS para el fondo azul clarito -->
+  </main>
+
+  <!-- Carrusel JS -->
+  <script>
+    const logos = document.querySelectorAll('.logo-slide');
+    let currentLogo = 0;
+
+    setInterval(() => {
+      logos.forEach((img, i) => img.style.display = i === currentLogo ? 'block' : 'none');
+      currentLogo = (currentLogo + 1) % logos.length;
+    }, 3000);
+  </script>
+
+  <section id="features" class="features section">
+  <div class="container">
+
+    <div class="section-header text-center mb-5">
+      <h2 class="fw-bold">Nuestros Servicios</h2>
+      <p>Ofrecemos atención profesional y cálida directamente en tu hogar.</p>
+    </div>
+
+    <div class="row gy-4 justify-content-center">
+
+   <!-- Consulta Médica -->
+<div class="col-md-6" id="consulta" data-aos="fade-up" data-aos-delay="100">
+  <div class="features-item text-center p-4 shadow rounded h-100 d-flex flex-column">
+    <img src="assets/img/IMG9.jpg" alt="Consulta Médica" class="img-fluid rounded mb-3" style="max-height: 200px; object-fit: cover;">
+    <i class="bi bi-house-heart fs-1 mb-2" style="color: #ffbb2c;"></i>
+    <h3 class="fs-5">Consulta Médica Domiciliaria</h3>
+    <p>Valoración y atención médica por profesionales capacitados, en la comodidad de tu hogar.</p>
+    <a href="https://wa.me/573227523968" class="btn btn-success btn-sm mt-2" target="_blank">
+      <i class="bi bi-whatsapp"></i> Solicitar por WhatsApp
+    </a>
+  </div>
+</div>
+
+<!-- Terapia Respiratoria -->
+<div class="col-md-6" id="respiratoria" data-aos="fade-up" data-aos-delay="200">
+  <div class="features-item text-center p-4 shadow rounded h-100 d-flex flex-column">
+    <img src="assets/img/IMG6.jpg" alt="Terapia Respiratoria" class="img-fluid rounded mb-3" style="max-height: 200px; object-fit: cover;">
+    <i class="bi bi-wind fs-1 mb-2" style="color: #5578ff;"></i>
+    <h3 class="fs-5">Terapia Respiratoria</h3>
+    <p>Atención especializada para pacientes con afecciones pulmonares y soporte respiratorio en casa.</p>
+    <a href="https://wa.me/573227523968" class="btn btn-success btn-sm mt-2" target="_blank">
+      <i class="bi bi-whatsapp"></i> Solicitar por WhatsApp
+    </a>
+  </div>
+</div>
+
+<!-- Terapia Ocupacional -->
+<div class="col-md-6" id="ocupacional" data-aos="fade-up" data-aos-delay="300">
+  <div class="features-item text-center p-4 shadow rounded h-100 d-flex flex-column">
+    <img src="assets/img/IMG5.jpg" alt="Terapia Ocupacional" class="img-fluid rounded mb-3" style="max-height: 200px; object-fit: cover;">
+    <i class="bi bi-person-wheelchair fs-1 mb-2" style="color: #e80368;"></i>
+    <h3 class="fs-5">Terapia Ocupacional</h3>
+    <p>Rehabilitación para mejorar la autonomía en actividades diarias.</p>
+    <a href="https://wa.me/573227523968" class="btn btn-success btn-sm mt-2" target="_blank">
+      <i class="bi bi-whatsapp"></i> Solicitar por WhatsApp
+    </a>
+  </div>
+</div>
+
+<!-- Electrocardiograma -->
+<div class="col-md-6" id="electrocardiograma" data-aos="fade-up" data-aos-delay="400">
+  <div class="features-item text-center p-4 shadow rounded h-100 d-flex flex-column">
+    <img src="assets/img/IMG7.jpg" alt="Electrocardiograma" class="img-fluid rounded mb-3" style="max-height: 200px; object-fit: cover;">
+    <i class="bi bi-activity fs-1 mb-2" style="color: #ff6347;"></i>
+    <h3 class="fs-5">Electrocardiograma</h3>
+    <p>Evaluación de la actividad eléctrica del corazón con tecnología portátil en tu casa.</p>
+    <a href="https://wa.me/573227523968" class="btn btn-success btn-sm mt-2" target="_blank">
+      <i class="bi bi-whatsapp"></i> Solicitar por WhatsApp
+    </a>
+  </div>
+</div>
+
+<!-- Laboratorio Clínico -->
+<div class="col-md-6" id="laboratorio" data-aos="fade-up" data-aos-delay="500">
+  <div class="features-item text-center p-4 shadow rounded h-100 d-flex flex-column">
+    <img src="assets/img/IMG8.jpg" alt="Laboratorio Clínico" class="img-fluid rounded mb-3" style="max-height: 200px; object-fit: cover;">
+    <i class="bi bi-droplet fs-1 mb-2" style="color: #1abc9c;"></i>
+    <h3 class="fs-5">Laboratorio Clínico</h3>
+    <p>Exámenes de laboratorio con toma de muestras en casa: sangre, orina, entre otros.</p>
+    <a href="https://wa.me/573227523968" class="btn btn-success btn-sm mt-2" target="_blank">
+      <i class="bi bi-whatsapp"></i> Solicitar por WhatsApp
+    </a>
+  </div>
+</div>
+</section>
+
 <style>
-  .slider_background {
-    background-color: #ADD8E6; /* Azul claro */
-    padding: 20px 0; /* Espaciado arriba y abajo */
+  .features-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    text-align: center;
+  }
+
+  .features-item img {
+    max-height: 200px;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .features-item .btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 </style>
 
-
-
-
-<section id="services" class="services section-bg">
+  <!-- Why Choose Us Section -->
+<section id="why-choose-us" class="why-choose-us section">
   <div class="container" data-aos="fade-up">
     <div class="section-title">
-      <h2>Servicios a Domicilio</h2>
-      <p>Ofrecemos una amplia gama de servicios de salud y bienestar en la comodidad de tu hogar.</p>
+      <h2>¿Por qué elegirnos?</h2>
+      <p>Comprometidos con tu salud, bienestar y comodidad.</p>
     </div>
 
-    <div class="row">
+    <div class="row gy-4">
 
-      <!-- Medicina General -->
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-        <div class="icon-box">
-          <img src="images/medicina_general.jpg" alt="Medicina General" class="img-fluid">
-          <h4>Medicina General</h4>
-          <p>Consulta médica en casa para valoración y diagnóstico de enfermedades comunes.</p>
+      <div class="col-lg-3 col-md-6">
+        <div class="icon-box d-flex flex-column align-items-center text-center" data-aos="fade-up" data-aos-delay="100">
+          <i class="bi bi-house-heart icon text-primary" style="font-size: 40px;"></i>
+          <h4 class="mt-3">Atención en Casa</h4>
+          <p>Brindamos servicios médicos en la comodidad de tu hogar, sin filas ni esperas.</p>
         </div>
       </div>
 
-      <!-- Terapia Respiratoria -->
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-        <div class="icon-box">
-          <img src="images/terapia_respiratoria.jpg" alt="Terapia Respiratoria" class="img-fluid">
-          <h4>Terapia Respiratoria</h4>
-          <p>Atención especializada para enfermedades respiratorias con equipos portátiles.</p>
+      <div class="col-lg-3 col-md-6">
+        <div class="icon-box d-flex flex-column align-items-center text-center" data-aos="fade-up" data-aos-delay="200">
+          <i class="bi bi-clock-history icon text-success" style="font-size: 40px;"></i>
+          <h4 class="mt-3">Disponibilidad Rápida</h4>
+          <p>Agendamos tus citas de forma ágil para que recibas atención oportuna.</p>
         </div>
       </div>
 
-      <!-- Sueros Vitaminados -->
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-        <div class="icon-box">
-          <img src="images/sueros_multivitaminicos.jpg" alt="Sueros Vitaminados" class="img-fluid">
-          <h4>Sueros Vitaminados</h4>
-          <p>Hidratación y refuerzo vitamínico directamente en la comodidad de tu hogar.</p>
+      <div class="col-lg-3 col-md-6">
+        <div class="icon-box d-flex flex-column align-items-center text-center" data-aos="fade-up" data-aos-delay="300">
+          <i class="bi bi-people icon text-warning" style="font-size: 40px;"></i>
+          <h4 class="mt-3">Profesionales Calificados</h4>
+          <p>Contamos con un equipo de especialistas certificados y con experiencia.</p>
         </div>
       </div>
 
-      <!-- Terapia Física -->
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-        <div class="icon-box">
-          <img src="images/terapia_fisica.jpg" alt="Terapia Física" class="img-fluid">
-          <h4>Terapia Física</h4>
-          <p>Rehabilitación física y ejercicios terapéuticos en casa para adultos y niños.</p>
-        </div>
-      </div>
-
-      <!-- Cuidados Paliativos -->
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-        <div class="icon-box">
-          <img src="images/cuidados_paliativos.jpg" alt="Cuidados Paliativos" class="img-fluid">
-          <h4>Cuidados Paliativos</h4>
-          <p>Acompañamiento profesional a pacientes con enfermedades crónicas o terminales.</p>
-        </div>
-      </div>
-
-      <!-- Lavado de Oídos -->
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-        <div class="icon-box">
-          <img src="images/lavado_oidos.jpg" alt="Lavado de Oídos" class="img-fluid">
-          <h4>Lavado de Oídos</h4>
-          <p>Procedimiento seguro para remover tapones de cera y mejorar la audición.</p>
-        </div>
-      </div>
-
-      <!-- Toma de Electrocardiograma -->
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-        <div class="icon-box">
-          <img src="images/electrocardiograma1.jpg" alt="Toma de Electrocardiograma" class="img-fluid">
-          <h4>Toma de Electrocardiograma</h4>
-          <p>Realización de electrocardiogramas a domicilio para diagnóstico cardiovascular.</p>
-        </div>
-      </div>
-
-      <!-- Laboratorio -->
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-        <div class="icon-box">
-          <img src="images/laboratorio.jpg" alt="Laboratorio" class="img-fluid">
-          <h4>Laboratorio</h4>
-          <p>Obtención de muestras y análisis de laboratorio en la comodidad de tu hogar.</p>
-        </div>
-      </div>
-
-      <!-- Ecografía -->
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-        <div class="icon-box">
-          <img src="images/ecografia.jpg" alt="Ecografía" class="img-fluid">
-          <h4>Ecografía</h4>
-          <p>Examen de imágenes médicas mediante ultrasonido para detectar condiciones internas.</p>
+      <div class="col-lg-3 col-md-6">
+        <div class="icon-box d-flex flex-column align-items-center text-center" data-aos="fade-up" data-aos-delay="400">
+          <i class="bi bi-heart-pulse icon text-danger" style="font-size: 40px;"></i>
+          <h4 class="mt-3">Cuidado Personalizado</h4>
+          <p>Diseñamos planes de atención individualizados según tus necesidades.</p>
         </div>
       </div>
 
@@ -371,130 +336,183 @@
   </div>
 </section>
 
- <!-- Info Section Adaptada -->
-<section class="info_section layout_padding2">
-  <div class="container">
-    <div class="info_items">
 
-      <!-- Ubicación -->
-      <div class="item d-flex align-items-center mb-3">
-        <i class="fas fa-map-marker-alt fa-2x me-3" style="color: #3b5998;"></i>
-        <div class="detail-box">
-          <p style="color: #000000;">TV 78k N 41-22 sur, Bogotá - Colombia</p> <!-- Agregado color negro para que sea visible -->
+<!-- Contact Section -->
+<section id="contact" class="contact section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Contáctenos</h2>
+    <div><span>Revise nuestra</span> <span class="description-title">Información de contacto</span></div>
+  </div>
+
+  <div class="container" data-aos="fade" data-aos-delay="100">
+    <div class="row gy-4">
+
+      <div class="col-lg-4">
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+          <i class="bi bi-geo-alt flex-shrink-0"></i>
+          <div>
+            <h3>Dirección</h3>
+            <p>Bogotá D.C., Colombia</p>
+          </div>
+        </div>
+
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+          <i class="bi bi-telephone flex-shrink-0"></i>
+          <div>
+            <h3>Llámanos</h3>
+            <p>+57 3227523968</p>
+          </div>
+        </div>
+
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+          <i class="bi bi-envelope flex-shrink-0"></i>
+          <div>
+            <h3>Correo</h3>
+            <p>fiosdoctor@gmail.com</p>
+          </div>
         </div>
       </div>
 
-      <!-- Teléfono -->
-      <div class="item d-flex align-items-center mb-3">
-        <i class="fas fa-phone fa-2x me-3" style="color: #25d366;"></i>
-        <div class="detail-box">
-          <p style="color: #25d366;">+573227523968</p>
-        </div>
-      </div>
-
-      <!-- Correo -->
-      <div class="item d-flex align-items-center mb-3">
-        <i class="fas fa-envelope fa-2x me-3" style="color: #e1306c;"></i>
-        <div class="detail-box">
-          <a href="mailto:fiosdoctorsas@gmail.com" style="color: #e1306c; text-decoration: none;">
-            <p>fiosdoctorsas@gmail.com</p>
-          </a>
-        </div>
+      <div class="col-lg-8">
+        <form id="custom-form" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-4">
+            <div class="col-md-6">
+              <input type="text" name="name" class="form-control" placeholder="Su Nombre" required>
+            </div>
+            <div class="col-md-6">
+              <input type="email" class="form-control" name="email" placeholder="Su Correo" required>
+            </div>
+            <div class="col-md-12">
+              <input type="text" class="form-control" name="subject" placeholder="Asunto" required>
+            </div>
+            <div class="col-md-12">
+              <textarea class="form-control" name="message" rows="6" placeholder="Mensaje" required></textarea>
+            </div>
+            <div class="col-md-12 text-center">
+              <div class="loading" style="display:none;">Cargando...</div>
+              <div class="error-message text-danger" style="display:none;">Hubo un error. Por favor intenta de nuevo.</div>
+              <div class="sent-message text-success" style="display:none;">Tu mensaje ha sido enviado. ¡Gracias!</div>
+              <button type="submit">Enviar Mensaje</button>
+            </div>
+          </div>
+        </form>
       </div>
 
     </div>
   </div>
 </section>
-<!-- Fin Info Section -->
 
+<!-- Footer -->
+<footer id="footer" class="footer dark-background">
+  <div class="container footer-top">
+    <div class="row gy-4 justify-content-center">
 
-<section class="container-fluid footer_section text-center py-3" style="background-color: #f8f9fa;">
-  <p>
-    &copy; 2019 Todos los derechos reservados por
-    <a href="#" style="font-weight: bold; color: #3b5998;">FIOS DOCTOR SAS</a>
-  </p>
-</section>
-<!-- Fin Footer Section -->
+      <!-- Información de contacto -->
+      <div class="col-lg-4 col-md-6 footer-about text-center">
+        <a href="#hero" class="logo d-flex justify-content-center align-items-center">
+          <span class="sitename">FIOS DOCTOR SAS</span>
+        </a>
+        <div class="footer-contact pt-3">
+          <p>Bogotá D.C., Colombia</p>
+          <p class="mt-3"><strong>Teléfono:</strong> <span>+57 3227523968</span></p>
+          <p><strong>Email:</strong> <span>fiosdoctor@gmail.com</span></p>
+        </div>
+        <div class="social-links d-flex justify-content-center mt-4">
+          <a href="https://www.instagram.com/su.medico.en.casa" target="_blank"><i class="bi bi-instagram"></i></a>
+          <a href="https://wa.me/573227523968" target="_blank"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
 
-<!-- Scripts -->
-<script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/bootstrap.js"></script>
+      <!-- Enlaces útiles -->
+      <div class="col-lg-2 col-md-3 footer-links text-center">
+        <h4>Enlaces útiles</h4>
+        <ul>
+          <li><a href="#hero">Inicio</a></li>
+          <li><a href="#about">Sobre Nosotros</a></li>
+          <li><a href="#contact">Contáctenos</a></li>
+        </ul>
+      </div>
 
-<!-- Google Maps -->
+      <!-- Servicios reales -->
+      <div class="col-lg-2 col-md-3 footer-links text-center">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#consulta">Consulta Médica</a></li>
+          <li><a href="#respiratoria">Terapia Respiratoria</a></li>
+          <li><a href="#ocupacional">Terapia Ocupacional</a></li>
+          <li><a href="#electrocardiograma">Electrocardiograma</a></li>
+          <li><a href="#laboratorio">Laboratorio Clínico</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+  <div class="container copyright text-center mt-4">
+    <p>© <strong class="px-1 sitename">FIOS DOCTOR SAS</strong> - Todos los derechos reservados</p>
+    <div class="credits">Diseñado con <a href="https://bootstrapmade.com/">FIOS DOCTOR SAS</a></div>
+  </div>
+</footer>
+
+<!-- Scroll Top -->
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Preloader -->
+<div id="preloader"></div>
+
+<!-- JS Files -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+<!-- Script personalizado para simular envío -->
 <script>
-  function initMap() {
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 11,
-      center: { lat: 4.6482837, lng: -74.247894 }
-    });
+  document.getElementById('custom-form').addEventListener('submit', function(e) {
+    e.preventDefault();
 
-    var image = 'images/maps-and-flags.png';
-    var beachMarker = new google.maps.Marker({
-      position: { lat: 4.6482837, lng: -74.247894 },
-      map: map,
-      icon: image
-    });
-  }
+    const loading = this.querySelector('.loading');
+    const error = this.querySelector('.error-message');
+    const success = this.querySelector('.sent-message');
+
+    loading.style.display = 'block';
+    error.style.display = 'none';
+    success.style.display = 'none';
+
+    setTimeout(() => {
+      loading.style.display = 'none';
+      success.style.display = 'block';
+      this.reset();
+    }, 1500);
+  });
 </script>
 
-<!-- Font Awesome CDN -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- Ícono flotante de WhatsApp -->
+<a href="https://wa.me/573227523968" class="whatsapp-icon" target="_blank">
+  <i class="bi bi-whatsapp"></i>
+</a>
 
-  <!-- end google map js -->
-</body>
-
-  <!-- ESTILOS WHATSAPP FLOTANTE -->
-  <style>
-    .whatsapp-float {
-      position: fixed;
-      width: 60px;
-      height: 60px;
-      bottom: 40px;
-      right: 40px;
-      background-color: #25d366;
-      color: #fff;
-      border-radius: 50px;
-      text-align: center;
-      font-size: 30px;
-      z-index: 100;
-      box-shadow: 2px 2px 3px #999;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-    }
-    .whatsapp-float:hover {
-      background-color: #128C7E;
-      color: white;
-      text-decoration: none;
-    }
-  </style>
-</head>
-
-<body>
-
-  <!-- SECCIÓN WHATSAPP FLOTANTE -->
-  <a href="https://wa.me/573227523968" class="whatsapp-float" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-  </a>
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <!-- jQuery (asegura compatibilidad con Bootstrap) -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Estilos para el ícono flotante -->
+<style>
+  .whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    font-size: 40px;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+  }
+  .whatsapp-icon:hover {
+    background-color: #128c7e;
+    cursor: pointer;
+  }
+</style>
 
 </body>
 
 </html>
-
-
-
-<meta name="keywords" content="atención médica a domicilio, terapia respiratoria, medicina general, certificados médicos, videoconsultas">
-<meta name="description" content="FIOS DOCTOR S.A.S ofrece servicios médicos a domicilio, terapia respiratoria, certificados médicos, y videoconsultas en Colombia. Atención rápida y profesional.">
-<meta name="author" content="FIOS DOCTOR S.A.S">
