@@ -117,22 +117,37 @@
       <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
         <div class="carousel-inner">
 
-       <!-- Texto con animación -->
-<div class="col-lg-6 d-flex flex-column justify-content-center text-start text-slide" data-aos="fade-up" data-aos-delay="100">
-  <h1 class="fw-bold text-primary titulo-principal mb-3">
-    Atención Médica Domiciliaria en <span class="text-success">Medellín y Bogotá</span>
-  </h1>
-  <p class="lead text-muted mb-4">
-    Brindamos servicios médicos de <strong>alta calidad</strong> directamente en tu hogar,
-    priorizando tu <span class="text-success">comodidad y bienestar</span>.
-  </p>
-  <a href="https://wa.me/573151010017"
-     class="btn btn-success btn-lg px-4 py-2 shadow-sm"
-     target="_blank"
-     aria-label="Contáctanos por WhatsApp">
-    <i class="bi bi-whatsapp me-2"></i> Contáctanos
-  </a>
-</div>
+          <!-- Primer Slide -->
+          <div class="carousel-item active" data-bs-interval="3000">
+            <div class="row align-items-center">
+
+              <!-- Texto con animación -->
+              <div class="col-lg-6 d-flex flex-column justify-content-center text-start" data-aos="fade-up" data-aos-delay="100">
+                <h1 class="fw-bold display-4 text-primary mb-3">
+                  Atención Médica Domiciliaria en <span class="text-success">Medellín y Bogotá</span>
+                </h1>
+                <p class="lead text-muted mb-4">
+                  Brindamos servicios médicos de <strong>alta calidad</strong> directamente en tu hogar,
+                  priorizando tu <span class="text-success">comodidad y bienestar</span>.
+                </p>
+                <!-- Botón con ícono de WhatsApp -->
+                <a href="https://wa.me/573151010017"
+                   class="btn btn-success btn-lg px-4 py-2 shadow-sm"
+                   target="_blank"
+                   aria-label="Contáctanos por WhatsApp">
+                  <i class="bi bi-whatsapp me-2"></i> Contáctanos
+                </a>
+              </div>
+
+              <!-- Imagen -->
+              <div class="col-lg-6 text-center" data-aos="zoom-in" data-aos-delay="200">
+                <img src="assets/img/imagen4.webp"
+                     class="img-fluid rounded shadow-lg"
+                     alt="Médico atendiendo paciente a domicilio en Medellín y Bogotá"
+                     loading="lazy">
+              </div>
+            </div>
+          </div>
 
           <!-- Segundo Slide -->
           <div class="carousel-item" data-bs-interval="3000">
@@ -309,32 +324,6 @@
 
 <style>
 
- /* Bajar títulos del Hero solo en el carrusel */
-#carouselExample .carousel-item .col-lg-6:first-child {
-  margin-top: 60px; /* Ajusta según necesidad */
-}
-
-/* Ajuste específico para móviles */
-@media (max-width: 768px) {
-  #carouselExample .carousel-item .col-lg-6:first-child {
-    margin-top: 100px; /* más espacio en celulares */
-    text-align: center; /* opcional, se ve mejor centrado */
-  }
-
-  #carouselExample h1,
-  #carouselExample h2 {
-    font-size: 2rem; /* evita que se corten */
-    line-height: 1.2;
-  }
-}
-
-@media (min-width: 992px) {
-  .text-slide h1 {
-    font-size: 3rem; /* tamaño normal en escritorio */
-  }
-}
-
-
     /* Ocultar menú en móviles */
 @media (max-width: 991px) {
   .navmenu {
@@ -494,7 +483,6 @@ header,
     opacity: 0.9;
   }
 
-  /* ---------- MENÚ SIN FONDO --------- */
   #navmenu {
     background: transparent;
     padding: 12px 24px;
@@ -512,7 +500,7 @@ header,
   }
 
   #navmenu a {
-    color: #000 !important;   /* <<<--- COLOR NEGRO PARA MAYOR VISIBILIDAD */
+    color: #000 !important;
     font-weight: 700;
     font-size: 1rem;
     text-decoration: none;
@@ -712,8 +700,6 @@ header,
 
 </style>
 
-
-
   <!-- Why Choose Us Section -->
 <section id="why-choose-us" class="why-choose-us section">
   <div class="container" data-aos="fade-up">
@@ -760,7 +746,7 @@ header,
   </div>
 </section>
 
-  <!-- About Section -->
+    About Section
 <section id="about" class="about section">
   <div class="container" data-aos="fade-up" data-aos-delay="100">
     <div class="row align-items-xl-center gy-5">
@@ -801,7 +787,7 @@ header,
 </section>
 
 
-<!-- Contact Section -->
+Contact Section
 <section id="contact" class="contact section">
   <div class="container section-title" data-aos="fade-up">
     <h2>Contáctenos</h2>
@@ -866,7 +852,7 @@ header,
   </div>
 </section>
 
-<!-- Footer -->
+Footer
 <footer id="footer" class="footer dark-background">
   <div class="container footer-top">
     <div class="row gy-4 justify-content-center">
@@ -888,7 +874,7 @@ header,
 </div>
       </div>
 
-      <!-- Enlaces útiles -->
+       Enlaces útiles
       <div class="col-lg-2 col-md-3 footer-links text-center">
         <h4>Enlaces útiles</h4>
         <ul>
@@ -898,7 +884,7 @@ header,
         </ul>
       </div>
 
-      <!-- Servicios reales -->
+      Servicios reales
       <div class="col-lg-2 col-md-3 footer-links text-center">
         <h4>Servicios</h4>
         <ul>
@@ -918,7 +904,7 @@ header,
   </div>
 </footer>
 
-<!-- Scroll Top -->
+ Scroll Top
 <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
 <!-- Preloader -->
