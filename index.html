@@ -117,37 +117,36 @@
       <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
         <div class="carousel-inner">
 
-          <!-- Primer Slide -->
-          <div class="carousel-item active" data-bs-interval="3000">
-            <div class="row align-items-center">
+        <!-- Primer Slide -->
+<div class="carousel-item active" data-bs-interval="3000">
+  <div class="row align-items-center min-vh-100">
 
-              <!-- Texto con animación -->
-              <div class="col-lg-6 d-flex flex-column justify-content-center text-start" data-aos="fade-up" data-aos-delay="100">
-                <h1 class="fw-bold display-4 text-primary mb-3">
-                  Atención Médica Domiciliaria en <span class="text-success">Medellín y Bogotá</span>
-                </h1>
-                <p class="lead text-muted mb-4">
-                  Brindamos servicios médicos de <strong>alta calidad</strong> directamente en tu hogar,
-                  priorizando tu <span class="text-success">comodidad y bienestar</span>.
-                </p>
-                <!-- Botón con ícono de WhatsApp -->
-                <a href="https://wa.me/573151010017"
-                   class="btn btn-success btn-lg px-4 py-2 shadow-sm"
-                   target="_blank"
-                   aria-label="Contáctanos por WhatsApp">
-                  <i class="bi bi-whatsapp me-2"></i> Contáctanos
-                </a>
-              </div>
+    <!-- Texto con animación -->
+    <div class="col-lg-6 d-flex flex-column justify-content-center text-start text-slide" data-aos="fade-up" data-aos-delay="100">
+      <h1 class="fw-bold display-4 text-primary mb-3">
+        Atención Médica Domiciliaria en <span class="text-success">Medellín y Bogotá</span>
+      </h1>
+      <p class="lead text-muted mb-4">
+        Brindamos servicios médicos de <strong>alta calidad</strong> directamente en tu hogar,
+        priorizando tu <span class="text-success">comodidad y bienestar</span>.
+      </p>
+      <a href="https://wa.me/573151010017"
+         class="btn btn-success btn-lg px-4 py-2 shadow-sm"
+         target="_blank"
+         aria-label="Contáctanos por WhatsApp">
+        <i class="bi bi-whatsapp me-2"></i> Contáctanos
+      </a>
+    </div>
 
-              <!-- Imagen -->
-              <div class="col-lg-6 text-center" data-aos="zoom-in" data-aos-delay="200">
-                <img src="assets/img/imagen4.webp"
-                     class="img-fluid rounded shadow-lg"
-                     alt="Médico atendiendo paciente a domicilio en Medellín y Bogotá"
-                     loading="lazy">
-              </div>
-            </div>
-          </div>
+    <!-- Imagen -->
+    <div class="col-lg-6 text-center" data-aos="zoom-in" data-aos-delay="200">
+      <img src="assets/img/imagen4.webp"
+           class="img-fluid rounded shadow-lg"
+           alt="Médico atendiendo paciente a domicilio en Medellín y Bogotá"
+           loading="lazy">
+    </div>
+  </div>
+</div>
 
           <!-- Segundo Slide -->
           <div class="carousel-item" data-bs-interval="3000">
@@ -323,6 +322,27 @@
 </section>
 
 <style>
+
+  /* Asegura que cada slide tenga la altura de la pantalla */
+.carousel-item .row {
+  min-height: 100vh; /* ocupa toda la pantalla */
+}
+
+/* Ajuste del texto */
+.text-slide {
+  padding: 20px;
+}
+
+.text-slide h1 {
+  font-size: 2rem; /* más pequeño en móviles */
+}
+
+@media (min-width: 992px) {
+  .text-slide h1 {
+    font-size: 3rem; /* tamaño normal en escritorio */
+  }
+}
+
 
     /* Ocultar menú en móviles */
 @media (max-width: 991px) {
