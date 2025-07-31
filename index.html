@@ -54,6 +54,7 @@
 
 </head>
 
+
 <body class="index-page">
 
   <!-- Google Tag Manager (noscript) -->
@@ -96,10 +97,9 @@
     </nav>
 
     <!-- Botón móvil -->
-    <button class="mobile-nav-toggle d-xl-none btn btn-outline-secondary" aria-label="Abrir menú móvil">
-      <i class="bi bi-list fs-3"></i>
-    </button>
-  </div>
+   <button id="menu-btn" class="mobile-nav-toggle d-xl-none btn btn-outline-secondary" aria-label="Abrir menú móvil">
+  <i class="bi bi-list fs-3"></i>
+</button>
 </header>
 
 
@@ -940,14 +940,29 @@ header,
       this.reset();
     }, 1500);
   });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const menuBtn = document.getElementById('menu-btn');
+    const navMenu = document.getElementById('navmenu');
+    const menuLinks = navMenu.querySelectorAll('a');
+
+    menuBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+
+    menuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+      });
+    });
+  });
 </script>
+
 <a href="https://wa.me/573151010017"
    id="whatsapp-button"
    target="_blank"
    title="Contáctanos por WhatsApp">
   <i class="bi bi-whatsapp"></i>
 </a>
-
-
 </body>
 </html>
