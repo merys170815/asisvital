@@ -45,19 +45,14 @@
 </head>
 
 <body class="index-page">
-<!-- Header -->
-<header id="header" class="header fixed-top shadow-sm bg-white" role="banner">
-  <div class="container-fluid container-xl d-flex justify-content-between align-items-center">
-
-    <!-- Logo -->
-    <a href="index.html" class="d-flex align-items-center gap-2 text-decoration-none" aria-label="Ir a la página principal ASISVITAL IPS">
-      <img src="images/logo45.png" alt="Logo ASISVITAL IPS" width="50" height="50" loading="lazy" />
-      <span class="fw-bold text-primary" style="font-size:1.5rem;">ASISVITAL IPS</span>
+<header id="header" class="header d-flex align-items-center fixed-top">
+  <div class="container-fluid d-flex align-items-center justify-content-between">
+    <a href="index.html" class="logo d-flex align-items-center me-auto">
+      <span class="sitename">Asis Vital IPS</span><span>.</span>
     </a>
 
-    <!-- Menú principal -->
-    <nav id="navmenu" class="navmenu" aria-label="Menú principal">
-      <ul class="d-flex flex-column flex-xl-row gap-4 align-items-start align-items-xl-center m-0 list-unstyled">
+    <nav class="nav-menu d-none d-xl-flex">
+      <ul class="d-flex gap-3 list-unstyled m-0">
         <li><a href="#hero" class="active" aria-current="page">Inicio</a></li>
         <li><a href="medicina-general.html">Medicina General</a></li>
         <li><a href="terapia-respiratoria.html">Terapia Respiratoria</a></li>
@@ -70,12 +65,11 @@
       </ul>
     </nav>
 
-    <!-- Botón menú móvil -->
-    <button id="menu-btn" class="mobile-nav-toggle d-xl-none btn btn-outline-secondary" aria-label="Abrir menú de navegación">
-      <i class="bi bi-list fs-3" aria-hidden="true"></i>
-    </button>
+    <i class="mobile-nav-toggle d-xl-none bi bi-list" role="button" aria-label="Abrir menú"></i>
   </div>
 </header>
+
+<main class="main">
 
 <!-- Hero -->
 <section id="hero" class="hero section" role="region" aria-label="Sección principal con servicios destacados">
