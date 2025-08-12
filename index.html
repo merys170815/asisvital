@@ -45,18 +45,24 @@
 </head>
 
 <body class="index-page">
-<header id="header" class="header d-flex align-items-center fixed-top">
+<header id="header" class="header d-flex align-items-center fixed-top" style="background-color: var(--color-primario);">
   <div class="container-fluid d-flex align-items-center justify-content-between">
-    <a href="index.html" class="logo d-flex align-items-center me-auto">
-      <span class="sitename">Asis Vital IPS</span><span>.</span>
+    <!-- Logo y texto -->
+    <a href="index.html" class="logo d-flex align-items-center me-auto text-white text-decoration-none" aria-label="Ir a la página principal Asis Vital IPS">
+      <img src="images/logo45.png" alt="Logo Asis Vital IPS" width="50" height="50" loading="lazy" />
+      <div class="ms-2">
+        <div class="fw-bold fs-5">Asis Vital IPS</div>
+        <small style="font-size: 0.8rem;">Atención Médica Domiciliaria</small>
+      </div>
     </a>
 
+    <!-- Menú para escritorio -->
     <nav class="nav-menu d-none d-xl-flex">
-      <ul class="d-flex gap-3 list-unstyled m-0">
-        <li><a href="#hero" class="active" aria-current="page">Inicio</a></li>
-        <li><a href="medicina-general.html">Medicina General</a></li>
-        <li><a href="terapia-respiratoria.html">Terapia Respiratoria</a></li>
-        <li><a href="portafolio.html">Portafolio</a></li>
+      <ul class="d-flex gap-3 list-unstyled m-0 text-white align-items-center">
+        <li><a href="#hero" class="active text-white" aria-current="page" style="text-decoration:none;">Inicio</a></li>
+        <li><a href="medicina-general.html" class="text-white" style="text-decoration:none;">Medicina General</a></li>
+        <li><a href="terapia-respiratoria.html" class="text-white" style="text-decoration:none;">Terapia Respiratoria</a></li>
+        <li><a href="portafolio.html" class="text-white" style="text-decoration:none;">Portafolio</a></li>
         <li>
           <a href="https://wa.me/573151010017" target="_blank" rel="noopener" class="btn btn-success rounded-pill px-3 py-1" aria-label="Contactar vía WhatsApp">
             <i class="bi bi-whatsapp me-1" aria-hidden="true"></i> WhatsApp
@@ -65,9 +71,47 @@
       </ul>
     </nav>
 
-    <i class="mobile-nav-toggle d-xl-none bi bi-list" role="button" aria-label="Abrir menú"></i>
+    <!-- Botón menú móvil -->
+    <i class="mobile-nav-toggle d-xl-none bi bi-list text-white" role="button" aria-label="Abrir menú"></i>
   </div>
+
+  <!-- Menú desplegable móvil -->
+  <nav id="mobile-nav" class="d-xl-none" style="display:none; background-color: var(--color-primario); position: fixed; top: 60px; right: 0; width: 100%; z-index: 1050;">
+    <ul class="list-unstyled m-0 p-3 d-flex flex-column gap-3">
+      <li><a href="#hero" class="text-white text-decoration-none" style="font-size:1.1rem;">Inicio</a></li>
+      <li><a href="medicina-general.html" class="text-white text-decoration-none" style="font-size:1.1rem;">Medicina General</a></li>
+      <li><a href="terapia-respiratoria.html" class="text-white text-decoration-none" style="font-size:1.1rem;">Terapia Respiratoria</a></li>
+      <li><a href="portafolio.html" class="text-white text-decoration-none" style="font-size:1.1rem;">Portafolio</a></li>
+      <li>
+        <a href="https://wa.me/573151010017" target="_blank" rel="noopener" class="btn btn-success rounded-pill px-3 py-1" aria-label="Contactar vía WhatsApp">
+          <i class="bi bi-whatsapp me-1" aria-hidden="true"></i> WhatsApp
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <script>
+    // Script para abrir/cerrar menú móvil
+    const toggleBtn = document.querySelector('.mobile-nav-toggle');
+    const mobileNav = document.getElementById('mobile-nav');
+
+    toggleBtn.addEventListener('click', () => {
+      if(mobileNav.style.display === 'block') {
+        mobileNav.style.display = 'none';
+      } else {
+        mobileNav.style.display = 'block';
+      }
+    });
+
+    // Cerrar menú si se hace click fuera
+    window.addEventListener('click', (e) => {
+      if (!mobileNav.contains(e.target) && !toggleBtn.contains(e.target)) {
+        mobileNav.style.display = 'none';
+      }
+    });
+  </script>
 </header>
+
 
 <main class="main">
 
