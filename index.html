@@ -25,7 +25,7 @@
   <meta name="twitter:image" content="https://www.tudominio.com/images/logo3.png">
 
   <!-- Favicon -->
-  <link rel="icon" href="images/logo3.png" type="image/png">
+  <link rel="icon" href="images/logo45.png" type="image/png">
 
   <!-- Fuentes optimizadas -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -51,7 +51,7 @@
 
     <!-- Logo -->
     <a href="index.html" class="d-flex align-items-center gap-2 text-decoration-none" aria-label="Ir a la página principal ASISVITAL IPS">
-      <img src="images/logo3.png" alt="Logo ASISVITAL IPS" width="50" height="50" loading="lazy" />
+      <img src="images/logo45.png" alt="Logo ASISVITAL IPS" width="70" height="70" loading="lazy" />
       <span class="fw-bold text-primary" style="font-size:1.5rem;">ASISVITAL IPS</span>
     </a>
 
@@ -825,6 +825,25 @@ Footer
     });
   });
 </script>
+
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const navMenu = document.querySelector('#navmenu ul');
+  const header = document.getElementById('header');
+
+  menuBtn.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+
+  window.addEventListener('scroll', () => {
+    if(window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+</script>
+
 
 <a href="https://wa.me/573151010017"
    id="whatsapp-button"
