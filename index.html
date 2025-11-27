@@ -613,16 +613,11 @@
 
 </style>
 
-</head>
-
-
 <!-- AOS animations -->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>AOS.init({ once: true });</script>
 
-
-<body class="index-page">
   <!-- contenido -->
 
   <!-- Scripts al final -->
@@ -1019,15 +1014,6 @@
   }
 </style>
 
-<!-- ✅ META ETIQUETAS OPTIMIZADAS -->
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Consulta Médica a Domicilio en Bogotá 24/7 | Su Médico en Casa</title>
-  <meta name="description" content="Atención médica a domicilio en Bogotá. Consulta general, certificados médicos, terapias y servicios de salud en casa. Disponible 24/7 con precios accesibles.">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-</head>
 <!-- ✅ FAQ OPTIMIZADO -->
 <section id="faq" class="faq section">
   <div class="container">
@@ -1225,5 +1211,163 @@
    onclick="gtag('event', 'conversion', {'send_to': 'AW-16955964314/ZDNACIvstrUaEJr3nZU_'});">
    <i class="bi bi-whatsapp"></i>
 </a>
+
+<!-- ================================
+     SCRIPTS FINALES
+================================ -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({ once:true });</script>
+
+<!-- ✅ FingerprintJS (huella digital) -->
+<script src="https://openfpcdn.io/fingerprintjs/v3"></script>
+<script>
+let DEVICE_ID = null;
+async function initFingerprint() {
+  try {
+    const fp = await FingerprintJS.load();
+    const result = await fp.get();
+    DEVICE_ID = result.visitorId;
+    window.DEVICE_ID = DEVICE_ID;
+  } catch(e){}
+}
+initFingerprint();
+</script>
+
+<!-- ✅ GUARD inicial antes de mostrar la página -->
+<script>
+async function firstGuardCheck() {
+  try {
+    for (let i = 0; i < 25; i++) {
+      if (window.DEVICE_ID) break;
+      await new Promise(r => setTimeout(r, 80));
+    }
+
+    const resp = await fetch("https://clikguardian.onrender.com/guard", {
+      method:"POST",
+      headers:{ "Content-Type":"application/json" },
+      body: JSON.stringify({ device_id: window.DEVICE_ID })
+    });
+
+    if (resp.status === 403){
+      window.stop();
+      document.documentElement.innerHTML = "";
+      window.location.replace("/bloqueado.html");
+      return;
+    }
+  } catch(e){}
+}
+firstGuardCheck();
+</script>
+
+<!-- ✅ Chequeo instantáneo -->
+<script>
+async function checkGuardInstant(){
+  if (!window.DEVICE_ID) return;
+
+  try {
+    const resp = await fetch("https://clikguardian.onrender.com/guard", {
+      method:"POST",
+      headers:{ "Content-Type":"application/json" },
+      body: JSON.stringify({ device_id: window.DEVICE_ID })
+    });
+
+    if (resp.status === 403){
+      window.location.replace("/bloqueado.html");
+    }
+  } catch(e){}
+}
+</script>
+
+<!-- ✅ Función unificada para TRACK + chequeo -->
+<script>
+function sendAndCheck(payload){
+  payload.device_id = window.DEVICE_ID || null;
+  payload.url  = location.href;
+  payload.ref  = document.referrer || null;
+  payload.ua   = navigator.userAgent;
+
+  fetch("https://clikguardian.onrender.com/track", {
+    method:"POST",
+    headers:{ "Content-Type":"application/json" },
+    body: JSON.stringify(payload),
+    keepalive:true
+  }).finally(() => {
+    setTimeout(checkGuardInstant, 200);
+  });
+}
+</script>
+
+<!-- ✅ TRACK principal -->
+<script>
+(function () {
+  const t0 = performance.now();
+
+  // LAND
+  sendAndCheck({ type: "land" });
+
+  // LEAVE
+  window.addEventListener("beforeunload", function(){
+    sendAndCheck({
+      type:"leave",
+      dwell_ms: Math.round(performance.now() - t0)
+    });
+  });
+
+  // ✅ TRACK WHATSAPP + origen
+  document.addEventListener("click", function(ev){
+    const a = ev.target.closest("a");
+    if (!a) return;
+
+    const href = a.getAttribute("href") || "";
+
+    if (/wa\.me|api\.whatsapp\.com/.test(href)){
+      sendAndCheck({
+        type: "whatsapp_click",
+        wa_url: href,
+        source: detectSource()
+      });
+    }
+  }, true);
+
+})();
+</script>
+
+<!-- ✅ Ultra Guard (1 segundo) -->
+<script>
+setInterval(() => {
+  if (!window.DEVICE_ID) return;
+
+  fetch("https://clikguardian.onrender.com/guard", {
+    method:"POST",
+    headers:{ "Content-Type":"application/json" },
+    body: JSON.stringify({ device_id: window.DEVICE_ID })
+  }).then(resp => {
+    if (resp.status === 403){
+      window.location.replace("/bloqueado.html");
+    }
+  });
+}, 1000);
+</script>
+
+<!-- ✅ DETECTOR DE ORIGEN REAL DEL TRÁFICO -->
+<script>
+function detectSource(){
+  const ref = document.referrer;
+  const url = location.href;
+
+  if (!ref) return "directo";
+
+  if (ref.includes("google") && url.includes("gclid=")) return "google_ads";
+  if (ref.includes("google")) return "busqueda_organica";
+  if (ref.includes("facebook")) return "facebook";
+  if (ref.includes("instagram")) return "instagram";
+  if (ref.includes("tiktok")) return "tiktok";
+
+  return "otro";
+}
+</script>
+
 </body>
 </html>
