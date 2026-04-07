@@ -103,6 +103,24 @@
   gtag('config', 'AW-18071631033');
 </script>
 
+    <!-- Event snippet for Contacto conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18071631033/ZHYICPn6zJccELnpnKlD',
+      'value': 1.0,
+      'currency': 'COP',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
 
 
 <!-- Google Tag Manager -->
@@ -110,7 +128,7 @@
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-MLTV38TJ');</script>
+})(window,document,'script','dataLayer','GTM-WWDNRVTP');</script>
 <!-- End Google Tag Manager -->
 
   <script>
@@ -188,7 +206,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <body>
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MLTV38TJ"
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WWDNRVTP"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
